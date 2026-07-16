@@ -121,6 +121,26 @@
       </link>
     </model>
 
+    <model name="cylinder_orange">
+      <pose>0 -2.5 0.5 0 0 0</pose>
+      <link name="Cylinder_link">
+        <collision name="collision">
+          <geometry><cylinder><radius>0.5</radius> <length>0.2</length></cylinder></geometry>
+        </collision>
+        <visual name="Cylinder_visual">
+          <geometry><cylinder><radius>0.5</radius> <length>0.2</length></cylinder></geometry>
+          <material>
+            <ambient>1.0, 0.47, 0.1 1</ambient>
+            <diffuse>1.0, 0.47, 0.1 1</diffuse>
+            <specular>1.0, 0.47, 0.1 1</specular>
+          </material>
+        </visual>
+        <inertial>
+          <mass>1.0</mass>
+          <inertia><ixx>0.06583</ixx><iyy>0.06583</iyy><izz>0.125</izz></inertia>
+         </inertial>
+      </link>
+    </model>
     <!-- Сфера, созданная для проверки Git -->
     <model name="test_sphere">
       <pose>4.0 -5.0 0.5 0 0 0</pose>
