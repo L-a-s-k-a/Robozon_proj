@@ -121,7 +121,7 @@
       </link>
     </model>
 
-    <!-- Модель с лидаром (статическая, без инерции, только визуал) -->
+    <!-- Модель с лидаром -->
     <model name="lidar_station" static="true">
       <pose>0 0 0 0 0 0</pose>
       <link name="laser_link">
