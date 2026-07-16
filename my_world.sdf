@@ -121,6 +121,35 @@
       </link>
     </model>
 
+    <!-- Сфера, созданная для проверки Git -->
+    <model name="test_sphere">
+      <pose>4.0 -5.0 0.5 0 0 0</pose>
+      <link name="test_sphere_link">
+        <collision name="test_sphere_collision">
+          <geometry><sphere><radius>0.5</radius></sphere></geometry>
+        </collision>
+        <visual name="test_sphere_visual">
+          <geometry><sphere><radius>0.5</radius></sphere></geometry>
+          <material>
+            <ambient>0.5 0.4 0.3 1</ambient>
+            <diffuse>0.3 0.1 0.5 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1.0</mass>
+        </inertial>
+      </link>
+    </model>
+
     <!-- Модель с лидаром -->
     <model name="lidar_station" static="true">
       <pose>0 0 0 0 0 0</pose>
