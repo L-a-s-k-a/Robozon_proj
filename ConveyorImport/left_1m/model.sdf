@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="left_1m">
+    <static>false</static>
+    <link name="link">
+      <collision name="collision">
+        <!-- Offset applied here to align feet to ground -->
+        <pose>0 0 0.597456 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://left_1m/meshes/col_left_1m.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <!-- Offset applied here to align feet to ground -->
+        <pose>0 0 0.597456 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://left_1m/meshes/left_1m.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
